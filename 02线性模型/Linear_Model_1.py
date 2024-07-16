@@ -20,6 +20,8 @@ def loss(x,y):
 
 # 记录训练参数
 mse_list = []
+
+# 可设置步长为1进行分析
 W=np.arange(0.0,4.1,0.1) # 生成从0.0到4.0（含4.0），步长为0.1的浮点数序列
 B=np.arange(0.0,4.1,0.1)
 
@@ -28,7 +30,7 @@ B=np.arange(0.0,4.1,0.1)
 
 # 生成网格采样点
 [w,b]=np.meshgrid(W,B)
-# print([w,b])
+print([w,b])
 
 # 训练
 l_sum = 0

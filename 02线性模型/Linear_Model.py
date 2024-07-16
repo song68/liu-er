@@ -2,20 +2,20 @@
 import numpy as np              
 import matplotlib.pyplot as plt 
  
-# 数据集
+# 保存数据集
 x_data = [1.0, 2.0, 3.0]
 y_data = [2.0, 4.0, 6.0]
 
-# 定义模型 前馈
+# 定义模型----前馈
 def forward(x):
     return x*w
 
-# 损失函数
+# 定义损失函数
 def loss(x, y):
     y_pred = forward(x)
     return (y_pred - y)**2
 
-# 保存权重和损失
+# 保存权重和对应损失
 w_list = []
 mse_list = []
 
